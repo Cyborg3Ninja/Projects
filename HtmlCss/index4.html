@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="icon" href="html5.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+    <h1>This is page 4</h1>
+    <a href="index3.html" target="_self" title="page 3">link to page 3</a>
+    <a href="index5.html" target="_self" title="page 5">link to page 5</a>
+    <br>
+    <!-- span = inline container (only letters affected) -->
+    <!-- div = block container (entire line affected) -->
+    <h1><span style="background-color: tomato">This is a span title</span></h1>
+    <h1><div style="background-color: cyan">This is a div title</div></h1>
+
+    <p><span style="background-color: tomato">This is a span sentence</span></p>
+    <p><div style="background-color: cyan">This is a div sentence</div></p>
+
+<br>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span style="background-color: tomato;">Autem magnam necessitatibus ipsum recusandae exercitationem dolores tempora. Rem est necessitatibus illo dolore maxime autem, nisi unde laudantium, fugiat omnis incidunt numquam.</span></p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <div style="background-color: cyan;">Amet, quos culpa facilis in tempore corrupti aut deleniti distinctio ut architecto quo voluptatibus, officia dicta ratione corporis deserunt porro alias nulla.</div></p>
+<br>
+<a href="https://www.google.com"><button style="font-size: 25px; background-color: black; border-color:aliceblue; color: cyan; border-radius: 5px;">click me </button></a>
+<a href="index1.html"><button style="font-size: 25px; background-color: black; color: cyan; border-color:aliceblue; border-radius: 5px;"> page 1 </button></a>
+<!-- button = clickable element, can be used to submit forms, trigger actions, or navigate to different pages. It can be styled using CSS to change its appearance, such as font size, background color, text color, and border radius. -->
+<a href="javascript:void(0)" onclick="doSomething()"><button style="font-size: 25px; background-color: black; color: cyan; border-color:aliceblue; border-radius: 20px;"> function goodbye </button></a>
+<a href="javascript:void(0)" onclick="doBack()"><button style="font-size: 25px; background-color: black; color: cyan; border-color:aliceblue; border-radius: 20px;"> function hello </button></a>
+<br>
+<p id="Greeting">Hello</p>
+<script>
+function doSomething() {
+    document.getElementById("Greeting").innerHTML = "Goodbye"
+}
+function doBack(){
+    document.getElementById("Greeting").innerHTML = "Hello"
+}
+</script>
+</body>
+</html>
